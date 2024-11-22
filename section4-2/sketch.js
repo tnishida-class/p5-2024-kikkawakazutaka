@@ -22,8 +22,8 @@ function draw(){
 function mouseDragged(){
   const dx = mouseX - pmouseX;
   const dy = mouseY - pmouseY;
-  if(mag(dx, dy) > 5){
-    const b = { x: mouseX, y: mouseY, size: 20, vx: dx, vy: dy };
+  if(mag(dx, dy) > 0){
+    const b = { x: mouseX, y: mouseY, size: random (1, 100), vx: dx, vy: dy };
     balls.push(b);
   }
 }
